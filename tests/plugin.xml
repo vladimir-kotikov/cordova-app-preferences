@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='utf-8'?>
+<plugin id="my-awesome-plugin-tests" version="0.0.1"
+    xmlns="http://apache.org/cordova/ns/plugins/1.0"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+    <name>My awesome plugin tests</name>
+    <dependency id="cordova-plugin-test-framework" />
+    <dependency id="cordova-plugin-app-preferences" url="..\\" />
+    <js-module name="tests" src="tests.js" />
+</plugin>

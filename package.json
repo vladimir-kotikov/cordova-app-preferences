@@ -15,6 +15,10 @@
       "blackberry10"
     ]
   },
+  "scripts": {
+    "test-android": "cordova-paramedic --platform android --plugin ./ --verbose",
+    "test-ios": "cordova-paramedic --platform ios --plugin ./ --verbose"
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/apla/me.apla.cordova.app-preferences.git"
@@ -24,6 +28,7 @@
   },
   "devDependencies": {
     "cordova": ">=5.4.1",
+    "cordova-paramedic": "git+https://github.com/purplecabbage/cordova-paramedic.git",
     "elementtree": "^0.1.6",
     "ios-sim": ">=5.0.5",
     "jasmine": "^2.3.2",

@@ -8,8 +8,7 @@ module.exports = function (context) {
 		Q = req('q'),
 		path = req('path'),
 		ET = req('elementtree'),
-		cordova = req('cordova'),
-		cordova_lib = cordova.cordova_lib,
+		cordova_lib = req('cordova-lib'),
 		ConfigParser = cordova_lib.configparser,
 		cordova_util = req('cordova-lib/src/cordova/util'),
 		fs = require("./filesystem")(Q, req('fs'), path),
@@ -63,7 +62,7 @@ module.exports = function (context) {
 					if (targetAttr)
 						element.attrs[targetAttr].push (attrConfig.value[config[attrName]][platformName]);
 					else
-						element[elementKey] = attrConfig.value[config[attrName]][platformName]
+						element[elementKey] = attrConfig.value[config[attrName]][platformName];
 				} else {
 
 					if (targetAttr)
